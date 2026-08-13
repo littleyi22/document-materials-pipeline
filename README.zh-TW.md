@@ -1,6 +1,6 @@
 作者：奕鈞老師 ｜ [https://www.ijun-ai.com/](https://www.ijun-ai.com/)
 
-# 文件教材處理流程
+# 講義｜教材｜文件處理流程
 
 這是一個 Codex Skill 與可重複執行的 Python 工具，用於清洗、整理、加頁碼、製作目錄，以及合併 Word／PDF 教材文件。
 
