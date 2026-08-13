@@ -1,0 +1,6 @@
+interface:
+  display_name: "Document Materials Pipeline"
+  short_description: "Clean, merge, and paginate teaching materials."
+  default_prompt: "Use $document-materials-pipeline to clean, paginate, and merge these materials in the order I specify."
+policy:
+  allow_implicit_invocation: true
