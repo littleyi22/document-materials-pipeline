@@ -15,9 +15,9 @@ Use this workflow to turn mixed Word/PDF source materials into clean, ordered te
 4. Build each unit in the confirmed order. A common unit order is: pre-learning sheet, paragraph-comprehension sheet, mind map, then textbook/handout.
 5. Apply requested transformations:
    - Remove visible page numbers only when requested; use a bounded mask or content-aware edit and verify body text is not covered.
-   - Rotate mind maps or other pages only when requested. Transfer rotation into page content before adding page numbers so the displayed bottom-right corner is correct.
+   - Rotate mind maps or other pages only when requested. Transfer rotation into page content before adding page numbers so the displayed page dimensions and bottom-center position are correct.
    - Add a TOC first when requested. The TOC is unnumbered;正文 pages start at 1 on the next page.
-   - Add page numbers at the displayed bottom-right corner using the requested font size, accounting for rotated pages and mixed page sizes.
+   - Add page numbers at the displayed bottom-center position by default, using the requested font size, accounting for rotated pages and mixed page sizes. Use another position only when the user explicitly requests it.
 6. Preserve source files by default. Write outputs to the requested `output` folder, using stable ASCII filenames when cloud-synced paths may corrupt non-ASCII names.
 7. Reopen every final PDF, verify page count and readability, verify TOC start pages against actual unit boundaries, and render representative pages: TOC, first content page, rotated page, middle section, and final page.
 8. Report created files, missing source types, total pages, and final paths.
@@ -32,7 +32,7 @@ Use this workflow to turn mixed Word/PDF source materials into clean, ordered te
 
 ## User interaction
 
-Ask for the order whenever it is not explicitly supplied. Confirm whether the user wants student, teacher, or both editions; whether source files should be overwritten; whether the TOC counts toward page numbering; the requested page-number location and font size; and whether page-number removal or page rotation is required.
+Ask for the order whenever it is not explicitly supplied. Confirm whether the user wants student, teacher, or both editions; whether source files should be overwritten; whether the TOC counts toward page numbering; the requested page-number font size; and whether page-number removal or page rotation is required. Unless the user specifies otherwise, place page numbers at the displayed bottom center because it is the clearest and most balanced default for teaching handouts.
 
 ## Bundled resources
 
