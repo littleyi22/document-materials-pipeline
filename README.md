@@ -1,3 +1,5 @@
+作者：奕鈞老師 ｜ [https://www.ijun-ai.com/](https://www.ijun-ai.com/)
+
 # Document Materials Pipeline
 
 A Codex skill and deterministic Python helper for preparing teaching materials from Word and PDF sources.
