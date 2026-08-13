@@ -86,7 +86,8 @@ def main():
         overlay = canvas.Canvas(stream, pagesize=(width, height))
         overlay.setFillColor(colors.black)
         overlay.setFont("Helvetica", font_size)
-        overlay.drawRightString(width - 24, 24, str(number))
+        # Default: centered horizontally near the displayed bottom edge.
+        overlay.drawCentredString(width / 2, 24, str(number))
         overlay.save()
         stream.seek(0)
         page.merge_page(PdfReader(stream).pages[0])
